@@ -2,14 +2,16 @@
   "name": "react-render-html",
   "version": "0.0.1",
   "description": "Render HTML as React Element with middlwares",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
     "lint": "eslint src",
     "lintfix": "eslint --fix src",
     "test": "jest",
+    "prepublish": "npm run build",
     "precommit": "lint-staged",
-    "prettier": "prettier-standard src/**/*.js"
+    "prettier": "prettier-standard src/**/*.js",
+    "release": "standard-version"
   },
   "lint-staged": {
     "linters": {
