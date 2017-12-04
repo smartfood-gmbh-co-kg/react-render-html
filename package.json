@@ -4,14 +4,15 @@
   "description": "Render HTML as React Element with middlwares",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint",
-    "lintfix": "eslint --fix",
+    "build": "babel src --out-dir dist",
+    "lint": "eslint src",
+    "lintfix": "eslint --fix src",
     "precommit": "lint-staged",
-    "prettier": "prettier-standard index.js"
+    "prettier": "prettier-standard src/**/*.js"
   },
   "lint-staged": {
     "linters": {
-      "index.js": [
+      "src/**/*.js": [
         "prettier-standard",
         "git add"
       ]
@@ -35,6 +36,9 @@
   },
   "homepage": "https://github.com/smartfood-gmbh-co-kg/eslint-config-sevencooks#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.12.1",
     "eslint-config-sevencooks": "^1.3.0",
     "husky": "^0.14.3",
