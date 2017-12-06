@@ -5,11 +5,10 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "lint": "eslint src",
-    "lintfix": "eslint --fix src",
-    "test": "jest",
+    "lint": "eslint src test",
+    "lintfix": "eslint --fix src test",
+    "test": "jest src",
     "prepublish": "npm run build",
-    "install": "npm run build",
     "precommit": "lint-staged",
     "prettier": "prettier-standard src/**/*.js",
     "release": "standard-version"
