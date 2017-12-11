@@ -1,6 +1,9 @@
 # react-render-html
 Render HTML as React Element with middlwares.
 
+## Important Info
+Fork of `@elliottsj/react-render-html`. We may stop maintining this. So please use with caution.
+
 ## How it works
 
 It renders a provided HTML string into a React element.
