@@ -1,6 +1,6 @@
 {
   "name": "@sevencooks/react-render-html",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Render HTML as React Element with middlwares",
   "main": "dist/index.js",
   "scripts": {
