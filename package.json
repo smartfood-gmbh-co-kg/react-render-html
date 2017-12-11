@@ -1,5 +1,5 @@
 {
-  "name": "react-render-html",
+  "name": "@sevencooks/react-render-html",
   "version": "0.0.2",
   "description": "Render HTML as React Element with middlwares",
   "main": "dist/index.js",
