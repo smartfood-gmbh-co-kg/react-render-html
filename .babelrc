@@ -2,8 +2,13 @@
   "presets": [
     ["env", {
       "targets": {
-        "node": "current"
-      }
+        "node": "current",
+        "browsers": [
+          "last 2 versions",
+          "ie >= 11",
+          "safari >= 9"
+        ]
+      },
     }]
   ],
   "plugins": ["transform-object-rest-spread"]
